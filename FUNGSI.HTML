@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function tambah(angka1, angka2,) {
+        return angka1 + angka2;
+        }
+
+
+        function kurang(angka1, angka2) {
+        return angka1 - angka2;
+        }
+
+
+        function kali(angka1, angka2) {
+        return angka1 * angka2;
+        }
+
+
+        function bagi(angka1, angka2) {
+        
+            if (angka2 === 0) {
+                return "Error! Tidak dapat melakukan pembagian dengan nol.";
+            }
+        return angka1 / angka2;
+        }
+
+
+        function kalkulatorSederhana() {
+
+        const angka1String = prompt("Masukan angka pertama:");
+
+        const angka1 = parseFloat(angka1String);
+
+
+        if (isNaN(angka1)) {
+            alert("Input angka pertama tidak valid!");
+            return;
+        }
+
+
+        const operator = prompt("Pilih operator (+, -, *, /)");
+
+
+        if (operator !=="+" && operator !=="-" && operator !=="*" && operator !=="/") {
+            alert("Operator tidak valid");
+            return;
+        }
+
+
+        const angka2String = Prompt("Masukan angka kedua:");
+
+        constangka2 = parseFloat(angka2String);
+
+
+        if (isNaN(angka2)) {
+            alert("Input angka keua tidak valid!");
+            return;
+        }
+
+        let hasil; 
+
+
+        switch (operator) {
+            case "+": 
+            hasil = tambah(angka1, angka2);
+            break;
+            case "-": 
+            hasil = kurang(angka1, angka2);
+            break;
+            case "*": 
+            hasil =  kali(angka1, angka2);
+            break;
+            case "/": 
+            hasil = bagi(angka1, angka2);
+            break;
+        }
+
+
+        alert(`Hasil dari ${angka1} ${operator} ${angka2} adalah: ${hasil}`);
+    }
+
+
+    kalkulatorSederhana();
+
+
+let mobil = ["Toyota", "Honda", "Suzuki"];
+console.log(mobil.length); 
+    </script>
+</body>
+</html>
