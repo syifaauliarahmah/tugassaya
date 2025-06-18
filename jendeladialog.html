@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button onClick="alert('ini adalah jendela dialog alert jika tombol diklik')">klik saya</button> 
+   <script>
+       alert("selamat datangh di dunia coding, wahai siswa PPLG")
+       
+       var yakin = confirm("Apakah kamu yakin akan mau belajar coding?");
+
+     if (yakin) {
+       document.write("<p>Baiklah, kamu murid idaman</p>");
+   } else {
+       document.write("<p>aduh, sayang sekali</P>");
+   }
+
+   var nama = prompt("siapa nama kamu?","");
+   var usia = prompt("berapa usia kamau?","");
+   var alamat = prompt("dimana alamat kamu?","");
+   document.write("<p>Halo, "+ nama +"</p>");
+   document.write("<p>usia kamu adalah "+ usia +"</p>");
+   document.write("<p>saat ini kamu tinggal di Demak "+ alamat +"</p>");
+   </script>
+</body>
+</html>
